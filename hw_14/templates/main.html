@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main class="mb-5">
+    
+      <div class="container px-4 py-5 mb-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Custom cards</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhoeih-1uNHtN5sjH-xfPg7onoXokmfWnh5leiENnWg&s');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Поиск библиотек</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+               
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>Kazakhstan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>3d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('data:image/jpeg;base64,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');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Доступность</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>Kazakhstan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://preview.redd.it/beautiful-super-amoled-wallpapers-for-your-phone-v0-nzt87hnoceqc1.jpg?width=640&crop=smart&auto=webp&s=c68eb6763a91cc5e59d7cba35098a51401375180');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Мобильная совместимость</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>Kazakhstan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+</body>
+</html>

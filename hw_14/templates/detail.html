@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col">
+            <img src="{{library.image.url}}" alt="" style="height:500px;width:800px">
+        </div>
+        <div class="col">
+            <h2>{{library.name}}</h2>
+            <p>Phone number: {{library.phone|default:"---"}}</p>
+            <p>Address: {{library.address|default:"---"}}</p>
+            <p class="pt-3">{{library.description}}</p>
+        </div>
+
+    </div>
+    <div class="row mt-5 ">
+        <h2 class="text-center">Список книг</h2>
+        {% for book in books %}
+        <div class="col mt-5">
+            <div class="card " style="width: 20rem;">
+                <img src="{{book.image.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{book.title}}</h5>
+                    <p class="card-text">{{book.description|slice:":80"|add:"..."}}</p>
+                    <a href="{% url 'book' book.id%}" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
+    {% with name="Nargiza" surname="Kuzybakhova"%}
+    <p> created by{{name}} {{surname}}</p>
+    {{library.name |default:"asdf"}}
+    {% endwith %}
+</div>
+
+
+
+{% endblock %}
